@@ -1,0 +1,214 @@
+
+@font-face{
+    font-family: "Montag W01 Bold";
+    src: url("https://db.onlinewebfonts.com/t/cb149731148ca21a3ba39fb0015c46c4.eot");
+    src: url("https://db.onlinewebfonts.com/t/cb149731148ca21a3ba39fb0015c46c4.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/cb149731148ca21a3ba39fb0015c46c4.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/cb149731148ca21a3ba39fb0015c46c4.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/cb149731148ca21a3ba39fb0015c46c4.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/cb149731148ca21a3ba39fb0015c46c4.svg#Montag W01 Bold")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face {
+    font-family: "Montaga Regular";
+    src: url("/assets/fonts/Montaga\ 400.ttf");
+}
+@font-face {
+    font-family: "EB_Garamond";
+    src: url("/assets/fonts/EB_Garamond/EBGaramond-Regular.ttf");
+}
+@font-face {
+    font-family: "EB_Garamond semi bold";
+    src: url("/assets/fonts/EB_Garamond/EBGaramond-SemiBold.ttf");
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Montaga Regular', Times, serif;
+}
+.fw-ebgarmond{
+    font-family: 'EB_Garamond'!important;
+}
+.fw-ebgarmond-semi-bold{
+    font-family: 'EB_Garamond semi bold'!important;
+}
+.fw-montaga-bold{
+    font-family: 'Montag W01 Bold'!important;
+}
+.title-hero{
+    font-size: 101px;
+}
+.fs-48{
+    font-size: 48px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.text-primary-black{
+    color: rgba(0, 14, 20, 1);
+}
+#cover{
+    background-image: url('/assets/img/bg-cover-dekstop.webp');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#hero{
+    background-image: url('/assets/img/bg-hero.webp');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-wrapper{
+    padding-bottom: 40px;
+}
+#groom-and-bride,#our-love-story,#reception,#reservation,#wedding-gift{
+    background-color: rgba(255, 246, 241, 1);
+}
+#pou,#groom-and-bride,#our-love-story,#reception,#reservation,#wedding-gift{
+    padding: 100px 0;
+}
+#count-down{
+    padding: 36px 0;
+}
+#timer{
+    margin-bottom: 40px;
+}
+.pou-wrapper{
+    margin-bottom: 100px;
+}
+.mb-md-100{
+    margin-bottom: 100px;
+}
+.ols-description{
+    padding-left: 220px;
+    padding-right: 220px;
+    line-height: 30px;
+}
+.bg-purple{
+    background-color: rgba(93, 95, 239, 1);
+}
+.btn-custom{
+    padding: 10px 16px;
+}
+.reception-title{
+    margin-bottom: 129px;
+}
+.reception-content{
+    margin: 0 201px 40px;
+    gap: 80px;
+}
+#reception{
+    background-image: url('/assets/img/vektor-1.webp');
+    background-repeat: no-repeat;
+}
+#reservation{
+    background-image: url('/assets/img/vektor-1.webp');
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.reservation-title{
+    margin-bottom: 54px;
+}
+#konfirmasi.form-select{
+    color: rgba(134, 134, 134, 1);
+}
+.form-select.btn-group .dropdown-toggle .filter-option {
+    color: blue!important;
+}
+::placeholder {
+    color: rgba(134, 134, 134, 1)!important;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgba(134, 134, 134, 1)!important;
+}
+.form-reservation{
+    padding: 0 330px;
+}
+.wedding-gift-description{
+    margin: 40px 0;
+}
+.wedding-gift-form{
+    padding: 0 330px;
+}
+#footer{
+    padding: 24px 406px;
+    background-color: rgba(4, 0, 34, 1);
+}
+.button-music{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/* #open-invitation {
+    animation: MoveUpDown 1.5s linear infinite;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 25px;
+    }
+    50% {
+      bottom: 0px;
+    }
+} */
+@media screen and (max-width: 920px) {
+    .reception-content{
+        margin: 0 10px 40px;
+        gap: 80px;
+    }
+    .form-reservation{
+        padding: 0 10px;
+    }
+    #footer{
+        padding: 24px 10px;
+    }
+    #hero{
+        background-position: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .title-hero{
+        font-size: 48px;
+    }
+    .ols-description{
+        padding: 0 10px;
+    }
+    .reception-content{
+        margin: 0 10px;
+    }
+    .wedding-gift-form{
+        padding: 0 10px;
+    }
+    #cover{
+        background-image: url('/assets/img/bg-cover-mobile.webp');
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
