@@ -1,6 +1,6 @@
 // countdown
 function makeTimer() {
-    var endTime = new Date("1 January 2024 8:00:00 GMT+07:00");			
+    var endTime = new Date("18 November 2023 8:00:00 GMT+07:00");			
     endTime = (Date.parse(endTime) / 1000);
 
     var now = new Date();
@@ -42,16 +42,16 @@ const bankList = [
     }
 ]
 
-function getBankName() {
-    const selected_bank = bankList.filter((item) => {
-        return item.bank_code.toUpperCase() === $('#bank-list').val().toUpperCase()
-    })
-    $('#bank-name').text(selected_bank[0].bank_name)
-    $('#account-number').text(selected_bank[0].account_number)
-    $('#account-name').text(selected_bank[0].account_name)
-}
+// function getBankName() {
+//     const selected_bank = bankList.filter((item) => {
+//         return item.bank_code.toUpperCase() === $('#bank-list').val().toUpperCase()
+//     })
+//     $('#bank-name').text(selected_bank[0].bank_name)
+//     $('#account-number').text(selected_bank[0].account_number)
+//     $('#account-name').text(selected_bank[0].account_name)
+// }
 
-getBankName($('#bank-list').val().toUpperCase())
+// getBankName($('#bank-list').val().toUpperCase())
 
 // copy bank number
 const fallbackCopyTextToClipboard = (text) => {
@@ -132,3 +132,27 @@ $('#open-invitation').click(function(params) {
     $('#music-button').removeClass('d-none').addClass('d-block')
     document.getElementById("hero").focus();
 })
+
+function redirectToCalendar(event){
+    event.preventDefault(); // Mencegah perilaku bawaan dari tautan
+    window.open('https://calendar.google.com/calendar/u/0/r/eventedit?text=Ivan-Dede&details&dates=20231118T100000/20231118T150000&location');
+}
+
+function openWhatsApp(event) {
+    event.preventDefault();
+    var nama = document.getElementById('nama').value;
+    var jumlahTamu = document.getElementById('jumlah_tamu').value;
+    var confirm = document.getElementById('konfirmasi').value
+    var wish = document.getElementById('wish').value;
+    var message = `Saya ${nama} `;
+    if (confirm == 'ya') {
+        message = message +`akan hadir bersama ${jumlahTamu} orang. ${wish}`;
+
+    }else{
+        message = `saya ${nama} tidak bisa hadir ke acara anda`;
+    }
+
+    var encodedMessage = encodeURIComponent(message);
+    var whatsappLink = `https://wa.me/+6289647048794?text=${encodedMessage}`;
+    window.open(whatsappLink, "_blank");
+  }
