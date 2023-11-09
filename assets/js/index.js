@@ -153,6 +153,12 @@ function openWhatsApp(event) {
     }
 
     var encodedMessage = encodeURIComponent(message);
-    var whatsappLink = `https://wa.me/+6289647048794?text=${encodedMessage}`;
+    var whatsappLink = `https://wa.me/+6289503909404?text=${encodedMessage}`;
     window.open(whatsappLink, "_blank");
   }
+
+
+  function redirectToGoogleMaps(event) {
+    event.preventDefault();
+    window.location.href = 'https://www.google.com/maps/dir//-6.1695202,107.0304195/@-6.1690013,107.0301822,19.31z/data=!4m2!4m1!3e0?entry=ttu';
+}

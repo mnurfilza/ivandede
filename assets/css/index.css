@@ -128,7 +128,7 @@ body{
     margin-bottom: 129px;
 }
 .reception-content{
-    margin: 0 201px 40px;
+    margin: 0 50px 60px;
     gap: 80px;
 }
 #reception{
@@ -189,10 +189,16 @@ body{
       bottom: 0px;
     }
 } */
+.maps-button{
+    margin-top: 60px;
+}
 @media screen and (max-width: 920px) {
     .reception-content{
         margin: 0 10px 40px;
         gap: 80px;
+    }
+    .maps-button{
+        margin-top: 40px;
     }
     .form-reservation{
         padding: 0 10px;
@@ -212,7 +218,11 @@ body{
         padding: 0 10px;
     }
     .reception-content{
-        margin: 0 10px;
+        margin: 0 0 40px;
+        gap: 80px;
+    }
+    .maps-button{
+        margin-top: 40px;
     }
     .wedding-gift-form{
         padding: 0 10px;
